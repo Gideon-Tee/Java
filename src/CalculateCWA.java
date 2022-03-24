@@ -1,5 +1,5 @@
 import java.util.*;
-
+//Calculate the CWA of students
 public class CalculateCWA {
     public static void main(String[] args) {
         Scanner readInput = new Scanner(System.in);
