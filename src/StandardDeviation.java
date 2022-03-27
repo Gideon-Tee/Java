@@ -5,7 +5,7 @@ public class StandardDeviation {
     public static void main(String[] args) {
         Scanner readLine = new Scanner(System.in);
         int numItems;
-        double sum = 0, mean, meanDifferenceSum = 0;
+        double sum = 0, mean, variance = 0;
         System.out.println("Enter number of items::");
         numItems = readLine.nextInt();
         double[] values = new double[numItems];
@@ -16,12 +16,13 @@ public class StandardDeviation {
         }
         mean = sum / numItems;
         for (int i = 0; i < numItems; i++) {
-            meanDifferenceSum += (values[i] - mean) * (values[i] - mean);
+            variance += (values[i] - mean) * (values[i] - mean);
         }
-        meanDifferenceSum = meanDifferenceSum / numItems;
-        double standardDeviation = Math.sqrt(meanDifferenceSum);
+        variance = variance / numItems;
+        double standardDeviation = Math.sqrt(variance);
 
         System.out.println("Standard deviation is:: " + standardDeviation);
+        System.out.println("Variance is:: " + variance);
     }
 
 }
