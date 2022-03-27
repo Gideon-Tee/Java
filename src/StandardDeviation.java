@@ -21,8 +21,8 @@ public class StandardDeviation {
         variance = variance / numItems;
         double standardDeviation = Math.sqrt(variance);
 
-        System.out.println("Standard deviation is:: " + standardDeviation);
-        System.out.println("Variance is:: " + variance);
+        System.out.println("Standard deviation is  = " + standardDeviation);
+        System.out.println("Variance =    " + variance);
     }
 
 }
