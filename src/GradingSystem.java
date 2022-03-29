@@ -13,18 +13,23 @@ public class GradingSystem {
         boolean req1 = examScore >= 25 && assessment >= 15;
         boolean req2 = (examScore == 24 && assessment == 15) || (examScore == 25 && assessment == 14);
 
+
+        if (req1) {
+            System.out.println("Student has passed");
+        } else if (req2) {
+            System.out.println("Student is condoned");
+        } else {
+            System.out.println("Student is repeated!");
+        }
+
         if (req1 || req2 && fees == 100) {
             certification = true;
         }
-        if (req1) {
-            System.out.println("You have met requirement 1");
-        } else if (req2) {
-            System.out.println("You have passed requirement 2 but have failed requirement 1");
-        } else {
-            System.out.println("You are repeated!");
-        }
+
         if (certification) {
-            System.out.println("You have been issued a certificate");
+            System.out.println("Student is issued a certificate");
+        } else {
+            System.out.println("Student is not issued a certificate");
         }
     }
 }
