@@ -12,11 +12,12 @@ public class Twin_Primes {
     }
     public static void main (String[]args){
         Scanner input = new Scanner(System.in);
-        int lastnum;
+        int lastNum;
         System.out.println("Enter the last number::");
-        lastnum = input.nextInt();
-        for (int i=2; i<=lastnum; i++) {
-            if (isPrime(i) && isPrime((i+2))) {
+        lastNum = input.nextInt();
+        System.out.println("TWIN PRIMES");
+        for (int i=2; i<=lastNum; i++) {
+            if (isPrime(i) && isPrime((i+2)) && ((i+2) <= lastNum))  {
                 System.out.println(i + " and " + (i+2));
 
             }
