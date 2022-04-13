@@ -44,10 +44,10 @@ public class Exams_Scores_Midsem {
             }
         }
         average = sum / 15;
-        System.out.println("maximum:: " + max);
+        System.out.println("\nmaximum:: " + max);
         System.out.println("minimum:: " + min);
         System.out.printf("average::  %2f",average);
-        System.out.println(" ");
+        System.out.println(" \n");
         System.out.println("Frequency of Grade A:: " + A);
         System.out.println("Frequency of Grade B:: " + B);
         System.out.println("Frequency of Grade C:: " + C);
